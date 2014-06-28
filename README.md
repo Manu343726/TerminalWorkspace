@@ -31,7 +31,7 @@ Also some vim plugins are required. Presonally I prefer to install vim plugins v
  - [**tmuxline**](https://github.com/edkolev/tmuxline.vim): A tmux status bar customization plugin with vim-airline integration.
  - [**promptline**](https://github.com/edkolev/promptline.vim): Other airline-ready plugin. In this case for shell prompt customization.
 
-The set of vim plugins selected to customize the terminal enviroment are all very similar, and their configuration scripts work in almost the same way (See the docs).
+The set of vim plugins selected to customize the terminal are all very similar, and their configuration scripts work in almost the same way (See the docs).
 
 Note that the install script supposes that all the required dependencies are installed. Please be sure you have all the required programs and vim plugins (I recommend to run :VundleInstall before just to be sure) before running `install.sh`.
 
@@ -68,4 +68,4 @@ the following two lines to the end of your `sudoers` file:
 License
 =======
 
-All the configurations scripts presented here are provided without any guarantee. You are allowed to freely copy,modify, and distribute them under your own requeriments; but I don't take any responsability of damage and other issues related to the usage of this scripts.
+All the configuration scripts provided here are provided without any guarantee. You are allowed to freely copy,modify, and distribute them under your own requeriments; but I don't take any responsability of damage and other issues related to the usage of this scripts.
