@@ -8,6 +8,7 @@ The (desired) result
 
 Here is a screenshoot of my common everyday workspace (Using the  [terminator](http://gnometerminator.blogspot.com.es/p/introduction.html) terminal emulator):
 
+![](https://pbs.twimg.com/media/BrO-g7TCEAMKkMt.png:large)
 
 
 The configuration presented here is designed to work on desktop (Via terminal emulators) and TTYs.
