@@ -22,6 +22,7 @@ This setup is based on vim and some vim plugins to enance the UX when using tmux
  - **vim**: Yep, I'm not an EMACS guy.
  - **tmux**: We all hate screen, isn't?
  - **fbterm**: The default linux terminal doesn't support 256 colors, so fbterm is used when running this setup on TTY.
+ - [**acpi**](): Its used to retrieve some system information for the status bar.
 
 Also some vim plugins are required. Presonally I prefer to install vim plugins via [Vundle](https://github.com/gmarik/Vundle.vim):
 
@@ -31,8 +32,7 @@ Also some vim plugins are required. Presonally I prefer to install vim plugins v
 
 The set of vim plugins selected to customize the terminal enviroment are all very similar, and their configuration scripts work in almost the same way (See the docs).
 
-Plase note that the install script supposes that all the required dependencies are installed. Please be sure you have all the required programs and vim plugins (I recommend to run :VundleInstall before just to be sure) before running `install.sh`.
-
+Note that the install script supposes that all the required dependencies are installed. Please be sure you have all the required programs and vim plugins (I recommend to run :VundleInstall before just to be sure) before running `install.sh`.
 
 Installation
 ============
@@ -48,7 +48,22 @@ configures the vim plugins to be ready to work.
 
 The installation script needs root privileges to perform some steps. In that cases the script uses `sudo` internally to call the required commands, so its posible that the install may be interrumped by sudo asking you for the user password.
 
+Also a `sync.sh` script is provided to update the scripts of this repository to the values of your current configuration. This might help if you have forked this and mantain
+your own configuration repository:
 
+    $ cd TerminalWorkspace
+    $ ./sync.sh
+    $ git add -A; git commit -m "Some config fixes"; git push
+
+### System status scripts for the tmux statusbar
+
+The customized version of the `full.vim` tmuxline preset uses some simple  scripts to retrieve information such as the current battery life, the SSID of the WLAN the computer is connected to, etc.
+Some of these scripts need root privileges to execute some of their internall commands, and these scripts use `sudo` in such cases.   
+To make the statusbar work properly, you should configure sudo to not ask for a pasword when running those scripts (Tmux cannot ask you for the password). For that purpose add
+the following two lines to the end of your `sudoers` file:
+
+    YOUR_USERNAME ALL = (root) /usr/local/bin/wifi_status.sh
+    YOUR_USERNAME ALL = (root) /usr/local/bin/upgrade_status.sh
 License
 =======
 
