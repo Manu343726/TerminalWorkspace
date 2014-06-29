@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TW_PATH=~/TerminalWorkspace
-CURRENT_PATH=.
+CURRENT_PATH=$PWD
 
 cd $TW_PATH
 git reset --hard HEAD

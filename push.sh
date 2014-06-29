@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TW_PATH=~/TerminalWorkspace
-CURRENT_PATH=.
+CURRENT_PATH=$TWD
 
 . $TW_PATH/sync_repo.sh
 
