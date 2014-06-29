@@ -2,4 +2,4 @@
 
 git reset --hard HEAD
 git pull
-./install.sh
+./sync_home.sh
