@@ -59,8 +59,8 @@ To make the statusbar work properly, you should configure sudo to not ask for a 
 Usage
 =====
 
-Several scripts are provided to make the syncronization of the setup between different computers easy:
-***NOTE:*** *When talking about the setup and its configuration, the following terms are used: "Current" refers to the configuration which is applied currently on the system, i.e. the sum of the config files stored in your home directory and others. The configuration stored on the repository has nothing to do with these (Could be viewed as a backup), and changes on the repo doesn't affect the computer settings.*
+Several scripts are provided to make the syncronization of the setup between different computers easy.  
+*When talking about the setup and its configuration, the following terms are used: "Current" refers to the configuration which is applied currently on the system, i.e. the sum of the config files stored in your home directory and others. The configuration stored on the repository has nothing to do with these (Could be viewed as a backup), and changes on the repo doesn't affect the computer settings.*
 *Also, this document refers to "remote config" when talking about the last version stored on the remote repository.*
 
 ### `apply_config.sh`
