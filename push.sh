@@ -5,7 +5,7 @@ CURRENT_PATH=$PWD
 
 . $TW_PATH/sync_repo.sh
 
-cd $TWPATH
+cd $TW_PATH
 git add -A
 git commit -m "Automatic config update (PUSH) from $(whoami)@$(uname --all)"
 git push
