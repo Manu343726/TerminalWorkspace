@@ -64,7 +64,7 @@ Or just use `push.sh` and `pull.sh`:
 
 The customized version of the `full.vim` tmuxline preset uses some simple  scripts to retrieve information such as the current battery life, the SSID of the WLAN the computer is connected to, etc.
 Some of these scripts need root privileges to execute some of their internall commands, and these scripts use `sudo` in such cases.   
-To make the statusbar work properly, you should configure sudo to not ask for a pasword when running those scripts (Tmux cannot ask you for the password). For that purpose add
+To make the statusbar work properly, you should configure sudo to not ask for a password when running those scripts (Tmux cannot ask you for the password). For that purpose add
 the following two lines to the end of your `sudoers` file:
 
     YOUR_USERNAME ALL = (root) /usr/local/bin/wifi_status.sh
