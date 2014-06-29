@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "Installing dependencies..."
-sudo yaourt -S --noconfirm --needed vim tmux oh-my-zsh-git fbterm acpi
+sudo yaourt -S --noconfirm --needed gvim tmux oh-my-zsh-git fbterm acpi
 
 echo "Setting up zsh..."
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 
 echo "Copying config files..."
 
