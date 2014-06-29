@@ -4,7 +4,7 @@
 
 syntax on           "enable syntax highlighting
 colorscheme molokai
-let g:airline_theme='luna'
+let g:airline_theme='powerlineish'
 
 set nowrap
 
