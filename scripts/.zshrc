@@ -6,6 +6,12 @@ elif [ "$TMUX" = "" ]; then
     tmux -2;
 fi
 
+#Clone configuration repository and run install (If no root user):
+if [[ ("$UID" -ne 0) && (! -d ~/TerminalWorkspace) ]]; then
+    git clone https://github.com/Manu343726/TerminalWorkspace.git ~/TerminalWorkspace
+    ~/TerminalWorkspace/install.sh
+fi
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -83,6 +89,17 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #Load promptline prompt config:
 source ~/.shell_prompt.sh
+
+#Alias for shell config refresh:
+alias refresh='source ~/.zshrc'
+
+#Some aliases for Terminal Workspace configuration:
+alias twinstall='. ~/TerminalWorkspace/install.sh'
+alias twapply='. ~/TerminalWorkspace/apply_config.sh'
+alias twsynchome='. ~/TerminalWorkspace/sync_home.sh'
+alias twsyncrepo='. ~/TerminalWorkspace/sync_repo.sh'
+alias twpull='. ~/TerminalWorkspace/pull.sh'
+alias twpush='. ~/TerminalWorkspace/push.sh'
 
 # My own custom aliases bellow:
 
