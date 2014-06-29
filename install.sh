@@ -7,5 +7,5 @@ echo "Setting up zsh..."
 chsh -s /bin/zsh
 
 echo "Syncing home config..."
-. ./sync_home.sh
+. ~/TerminalWorkspace/sync_home.sh
 

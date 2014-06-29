@@ -2,4 +2,4 @@
 
 git reset --hard HEAD
 git pull
-. ./sync_home.sh
+. ~/TerminalWorkspace/sync_home.sh
