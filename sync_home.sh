@@ -23,5 +23,5 @@ sudo cp ./scripts/status/* /usr/local/bin/ -f -v
 
 
 #Apply current configuration
-./apply_config.sh
+. ./apply_config.sh
 

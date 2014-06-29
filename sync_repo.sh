@@ -19,6 +19,6 @@ cp ~/.vim/bundle/tmuxline.vim/autoload/tmuxline/presets/full.vim ./scripts/tmuxl
 cp /usr/local/bin/* ./scripts/status/ -f -v
 
 #Apply current configuration:
-./apply_config.sh
+. ./apply_config.sh
 
 echo "Done"
