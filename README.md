@@ -26,7 +26,7 @@ This setup is based on vim and some vim plugins to enance the UX when using tmux
  - [**acpi**](): Its used to retrieve some system information for the status bar.
 
 Also some vim plugins are required. Presonally I prefer to install vim plugins via [Vundle](https://github.com/gmarik/Vundle.vim):
-
+ - **Vundle**: As I said, its used to install and configure the vim plugins.
  - [**vim-airline**](https://github.com/bling/vim-airline): The vimscript-only replacement of powerline. I selected this instead of powerline because its configuration (Its very easy) and its great integration with other similar plugins.
  - [**tmuxline**](https://github.com/edkolev/tmuxline.vim): A tmux status bar customization plugin with vim-airline integration.
  - [**promptline**](https://github.com/edkolev/promptline.vim): Other airline-ready plugin. In this case for shell prompt customization.
