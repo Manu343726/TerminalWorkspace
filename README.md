@@ -44,8 +44,7 @@ Just run `install.sh`:
     $ ./install.sh
     
 Automatically this script updates all the configuration files of fbterm, tmux, zsh, etc in your home directory, and also
-configures the vim plugins to be ready to work. Also it tries to install all the required dependencies first, if they are not installed (This works for ArchLinux only).
-
+configures the vim plugins to be ready to work. Also it tries to install all the required dependencies first, if they are not installed (This works for ArchLinux only).   
 The installation script needs root privileges to perform some steps. In that cases the script uses `sudo` internally to call the required commands, so its posible that the install may be interrumped by sudo asking you for the user password.
 
 Also a `sync.sh` script is provided to update the scripts of this repository to the values of your current configuration. This might help if you have forked this and mantain
@@ -65,11 +64,12 @@ Or just use `push.sh` and `pull.sh`:
 
 The customized version of the `full.vim` tmuxline preset uses some simple  scripts to retrieve information such as the current battery life, the SSID of the WLAN the computer is connected to, etc.
 Some of these scripts need root privileges to execute some of their internall commands, and these scripts use `sudo` in such cases.   
-To make the statusbar work properly, you should configure sudo to not ask for a pasword when running those scripts (Tmux cannot ask you for the password). For that purpose add
+To make the statusbar work properly, you should configure sudo to not ask for a password when running those scripts (Tmux cannot ask you for the password). For that purpose add
 the following two lines to the end of your `sudoers` file:
 
-    YOUR_USERNAME ALL = (root) /usr/local/bin/wifi_status.sh
-    YOUR_USERNAME ALL = (root) /usr/local/bin/upgrade_status.sh
+    YOUR_USERNAME ALL = (root) NOPASSWD: /usr/local/bin/wifi_status.sh
+    YOUR_USERNAME ALL = (root) NOPASSWD: /usr/local/bin/upgrade_status.sh
+    
 License
 =======
 
