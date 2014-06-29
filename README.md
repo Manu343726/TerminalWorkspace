@@ -120,7 +120,7 @@ The user of A just pushes the changes:
 
     user@A ~$ twpush
     
-This applies the changes and send the setup to the remote. Then the user goes to B and just pulls the setup:
+This applies the changes and sends the setup to the remote. Then the user goes to B and just pulls the setup:
 
     user@B ~$ twpull
     
