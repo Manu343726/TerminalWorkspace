@@ -67,8 +67,8 @@ Some of these scripts need root privileges to execute some of their internall co
 To make the statusbar work properly, you should configure sudo to not ask for a password when running those scripts (Tmux cannot ask you for the password). For that purpose add
 the following two lines to the end of your `sudoers` file:
 
-    YOUR_USERNAME ALL = (root) /usr/local/bin/wifi_status.sh
-    YOUR_USERNAME ALL = (root) /usr/local/bin/upgrade_status.sh
+    YOUR_USERNAME ALL = (root) NOPASSWD: /usr/local/bin/wifi_status.sh
+    YOUR_USERNAME ALL = (root) NOPASSWD: /usr/local/bin/upgrade_status.sh
     
 License
 =======
