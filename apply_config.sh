@@ -8,7 +8,7 @@ vim -c "TmuxlineSnapshot! ~/.tmuxline_cfg" -c qall
 vim -c "PromptlineSnapshot! ~/.shell_prompt.sh airline" -c qall
 
 echo "Reloading zsh config..."
-source ~/.zshrc
+. ~/.zshrc
 
 
 echo "Done"
