@@ -126,6 +126,10 @@ This applies the changes and sends the setup to the remote. Then the user goes t
     
 Now the setup is applied on B and both computers are sharing exactly the same terminal setup!
 
+### I have deleted the repository! I have no local backup nor configuration scripts!
+
+Don't worry, the default `.zshrc` takes care of this case. When loading ZSH one of the first things it does is to check if the Terminal Workspace repository is installed (Should be a folder named `TerminalWorkspace` on your home directory), and clones and reinstalls the setup automatically if no folder is found.   
+One of the key ideas of this project was to just clone the repository and run the install script to make all the setup work, whatever are the dependencies needed.
     
 License
 =======
