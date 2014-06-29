@@ -18,4 +18,7 @@ cp ~/.vim/bundle/tmuxline.vim/autoload/tmuxline/presets/full.vim ./scripts/tmuxl
 #Copy tmuxline status scripts to /usr/local/bin
 cp /usr/local/bin/* ./scripts/status/ -f -v
 
+#Apply current configuration:
+./apply_config.sh
+
 echo "Done"

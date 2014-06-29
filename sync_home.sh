@@ -22,13 +22,6 @@ cp ./scripts/tmuxline/presets/full.vim ~/.vim/bundle/tmuxline.vim/autoload/tmuxl
 sudo cp ./scripts/status/* /usr/local/bin/ -f -v
 
 
-echo "Generating snapshots..."
-
-#Generate configuration scripts for tmuxline and promptline:
-vim -c "TmuxlineSnapshot! ~/.tmuxline_cfg" -c qall
-vim -c "PromptlineSnapshot! ~/.shell_prompt.sh airline" -c qall
-source ~/.shell_prompt.sh
-
-
-echo "Done"
+#Apply current configuration
+./apply_config.sh
 
