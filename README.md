@@ -33,7 +33,6 @@ Also some vim plugins are required. Presonally I prefer to install vim plugins v
 
 The set of vim plugins selected to customize the terminal are all very similar, and their configuration scripts work in almost the same way (See the docs).
 
-Note that the install script supposes that all the required dependencies are installed. Please be sure you have all the required programs and vim plugins (I recommend to run :VundleInstall before just to be sure) before running `install.sh`.
 
 Installation
 ============
@@ -45,7 +44,7 @@ Just run `install.sh`:
     $ ./install.sh
     
 Automatically this script updates all the configuration files of fbterm, tmux, zsh, etc in your home directory, and also
-configures the vim plugins to be ready to work.
+configures the vim plugins to be ready to work. Also it tries to install all the required dependencies first, if they are not installed (This works for ArchLinux only).
 
 The installation script needs root privileges to perform some steps. In that cases the script uses `sudo` internally to call the required commands, so its posible that the install may be interrumped by sudo asking you for the user password.
 
@@ -55,6 +54,12 @@ your own configuration repository:
     $ cd TerminalWorkspace
     $ ./sync.sh
     $ git add -A; git commit -m "Some config fixes"; git push
+    
+Or just use `push.sh` and `pull.sh`:
+
+    $ cd TerminalWOrkspace
+    $ ./push.sh     #This automatically syncs, commits, and pushes to the remote.
+    $ ./pull.sh     #Discards changes, pulls from remote, and runs install.sh
 
 ### System status scripts for the tmux statusbar
 
