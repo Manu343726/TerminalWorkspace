@@ -47,7 +47,7 @@ Automatically this script updates all the configuration files of fbterm, tmux, z
 configures the vim plugins to be ready to work. Also it tries to install all the required dependencies first, if they are not installed (This works for ArchLinux only).   
 The installation script needs root privileges to perform some steps. In that cases the script uses `sudo` internally to call the required commands, so its posible that the install may be interrumped by sudo asking you for the user password.
 
-*Note that `install.sh` is called using `. `. Read the `Usage` notes above for more info.*
+*Note that `install.sh` is called using `. `. Read the `Usage` notes bellow for more info.*
 
 ### System status scripts for the tmux statusbar
 
