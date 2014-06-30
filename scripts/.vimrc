@@ -67,8 +67,8 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extr
 """"""""""""""""""""""""""""""
 " airline
 """""""""""""""""""""""""""""""
-let g:airline_right_sep='|'
-let g:airline_left_sep='|'
+"let g:airline_right_sep='|'
+"let g:airline_left_sep='|'
 let g:airline_branch_empty_message=''
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
