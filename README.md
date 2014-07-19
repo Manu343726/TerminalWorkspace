@@ -89,6 +89,7 @@ Since sourcing a config file only affects the shell from which the `source` comm
 ### `sync_home.sh`
 
 The purpose of this script is to syncronize the setup on the system taking the values of the repository. This script overwrites all the configuration files of the computer and applies the setup:
+
     $ cd TerminalWorkspace
     $ . ./sync_home.sh
 
