@@ -6,7 +6,7 @@ My personal zsh, tmux, and vim setup. No guarantees, works for me at least.
 The (desired) result
 ====================
 
-Here is a screenshoot of my common everyday workspace (Using the  [terminator](http://gnometerminator.blogspot.com.es/p/introduction.html) terminal emulator):
+Here is a screenshot of my common everyday workspace (Using the  [terminator](http://gnometerminator.blogspot.com.es/p/introduction.html) terminal emulator):
 
 ![](https://pbs.twimg.com/media/BrO-g7TCEAMKkMt.png:large)
 
@@ -89,6 +89,7 @@ Since sourcing a config file only affects the shell from which the `source` comm
 ### `sync_home.sh`
 
 The purpose of this script is to syncronize the setup on the system taking the values of the repository. This script overwrites all the configuration files of the computer and applies the setup:
+
     $ cd TerminalWorkspace
     $ . ./sync_home.sh
 
