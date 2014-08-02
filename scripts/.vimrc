@@ -8,6 +8,7 @@ let g:airline_theme='dark'
 
 set nowrap
 
+
 "Tab configuration:
 """""""""""""""""""
 
@@ -42,6 +43,7 @@ Bundle 'https://github.com/Valloric/YouCompleteMe.git'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'edkolev/tmuxline.vim'
+Bundle 'oblitum/rainbow'
 
 filetype plugin indent on     " required!
 "
@@ -94,3 +96,7 @@ let g:promptline_preset = {
         \'z'    : [ '$(tty)' ],
         \'x'    : [ promptline#slices#git_status() , promptline#slices#vcs_branch() ]}
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Rainbow config
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:rainbow_active = 1
