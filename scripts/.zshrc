@@ -117,3 +117,8 @@ alias adsl='wget --output-document=/dev/null http://speedtest.wdc01.softlayer.co
 alias gui='sudo systemctl isolate graphical.target'
 
 alias 2048='~/Juegos/2048-cli/2048'
+
+tssh()
+{
+    ssh -t $1 tmux set -g prefix C-m-b ';' /bin/zsh ';' tmux set -g prefix C-b ';' exit
+}

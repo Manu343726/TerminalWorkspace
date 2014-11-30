@@ -7,7 +7,7 @@ colorscheme molokai
 let g:airline_theme='dark'
 
 set nowrap
-
+set number
 
 "Tab configuration:
 """""""""""""""""""
