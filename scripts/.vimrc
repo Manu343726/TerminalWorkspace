@@ -86,7 +86,7 @@ set t_Co=256
 " tmuxline config
 """"""""""""""""""""""""""""""""""""""""""""""""""" 
         
-let g:tmuxline_preset = 'full'
+let g:tmuxline_preset = 'tmux'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " promptline config
