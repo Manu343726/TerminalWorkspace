@@ -23,13 +23,13 @@ set noswapfile
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
-Bundle 'https://github.com/Valloric/YouCompleteMe.git'
+"Bundle 'https://github.com/Valloric/YouCompleteMe.git'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'edkolev/tmuxline.vim'
