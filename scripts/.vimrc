@@ -1,14 +1,4 @@
-""""""""""""""""""""""""""""""""""""""""""""""""
-" Visual config
-""""""""""""""""""""""""""""""""""""""""""""""""
-
-syntax on           "enable syntax highlighting
-colorscheme molokai
-let g:airline_theme='dark'
-
-set nowrap
-set number
-
+"""""""""""""""""""
 "Tab configuration:
 """""""""""""""""""
 
@@ -33,17 +23,18 @@ set noswapfile
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
-Bundle 'https://github.com/Valloric/YouCompleteMe.git'
+"Bundle 'https://github.com/Valloric/YouCompleteMe.git'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'edkolev/tmuxline.vim'
 Bundle 'oblitum/rainbow'
+Bundle 'tomasr/molokai'
 
 filetype plugin indent on     " required!
 "
@@ -55,6 +46,17 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Visual config
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+syntax on           "enable syntax highlighting
+colorscheme molokai
+let g:airline_theme='dark'
+
+set nowrap
+set number
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " YouCompleteMe config
