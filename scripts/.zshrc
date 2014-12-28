@@ -13,7 +13,11 @@ if [[ ("$UID" -ne 0) && (! -d ~/TerminalWorkspace) ]]; then
 fi
 
 # Path to your oh-my-zsh installation.
+
 ZSH=~/.oh-my-zsh
+
+
+
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -69,6 +73,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.1.0/bin:$PATH #Ruby 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -122,3 +127,7 @@ tssh()
 {
     ssh -t $1 tmux set -g prefix C-m-b ';' /bin/zsh ';' tmux set -g prefix C-b ';' exit
 }
+
+#Fix GREP_OPTIONS warning
+alias grep="/usr/bin/grep $GREP_OPTIONS"
+unset GREP_OPTIONS
