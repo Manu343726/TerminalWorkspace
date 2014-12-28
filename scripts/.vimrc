@@ -103,3 +103,8 @@ let g:promptline_preset = {
 " Rainbow config
 """""""""""""""""""""""""""""""""""""""""""""""""""
 let g:rainbow_active = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Markdown-instant config
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:instant_markdown_autostart = 0
