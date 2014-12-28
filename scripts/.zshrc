@@ -13,7 +13,7 @@ if [[ ("$UID" -ne 0) && (! -d ~/TerminalWorkspace) ]]; then
 fi
 
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
