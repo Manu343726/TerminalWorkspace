@@ -143,3 +143,9 @@ mocp_info()
 
 alias mocpinfo='mocp --format "%song (%artist - %album)"'
 
+
+#Open sublime
+sublm()
+{
+    subl $@ &>/dev/null &
+}

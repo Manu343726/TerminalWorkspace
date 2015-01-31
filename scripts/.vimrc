@@ -99,13 +99,13 @@ set t_Co=256
 """"""""""""""""""""""""""""""""""""""""""""""""""" 
         
 let g:tmuxline_preset = {
-        \ 'a': '#(whoami)',
         \ 'b': ['s: #S', 'x#{session_windows}'],
         \ 'c': ['p: #P', '#{pane_width}x#{pane_height}'],
         \ 'win': ['w: #I #W', 'x#{window_panes}'],
         \ 'cwin':['w: #I#F #W', 'x#{window_panes}'],
-        \ 'x': '#(mocp -i)',
-        \ 'z': ['#(dropbox status)'],
+        \ 'x': ['#(mocp -i | grep "SongTitle: .*" | sed s/SongTitle://g)', 
+        \       '#(mocp -i | grep "Artist: .*" | sed s/Artist://g)'],
+        \ 'z': ['#(dropbox status | sed s/Sincronizando//g)'],
         \ 'options': {
         \    'status-justify': 'left'}}
 
