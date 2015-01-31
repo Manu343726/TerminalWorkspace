@@ -104,7 +104,7 @@ let g:tmuxline_preset = {
         \ 'c': ['p: #P', '#{pane_width}x#{pane_height}'],
         \ 'win': ['w: #I #W', 'x#{window_panes}'],
         \ 'cwin':['w: #I#F #W', 'x#{window_panes}'],
-        \ 'x': ['#(mocp -i)'],
+        \ 'x': '#(mocp -i)',
         \ 'z': ['#(dropbox status)'],
         \ 'options': {
         \    'status-justify': 'left'}}

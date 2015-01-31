@@ -129,3 +129,17 @@ tssh()
 #Fix GREP_OPTIONS warning
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
+
+#mocp status
+mocp_info()
+{   
+    if [[ -n "$(mocp -i | grep "PLAY")" ]]; then 
+        echo "hello"
+        #mocp --format "%song (%artist - %album)"
+    else
+        echo ""   
+    fi    
+}
+
+alias mocpinfo='mocp --format "%song (%artist - %album)"'
+
