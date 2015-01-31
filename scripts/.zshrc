@@ -104,6 +104,8 @@ alias twpush='. ~/TerminalWorkspace/push.sh'
 
 # My own custom aliases bellow:
 
+alias reredirect='~/reredirect/reredirect'
+
 alias smartmake='make clean; clear; make;'
 alias templight='clang++-templight -templight -templight-safe-mode -templight-format xml'
 alias templight11='templight -std=c++11'

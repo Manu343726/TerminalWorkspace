@@ -1,5 +1,4 @@
-"""""""""""""""""""
-"Tab configuration:
+
 """""""""""""""""""
 
 set tabstop=4
@@ -15,6 +14,16 @@ set expandtab
 
 set nobackup
 set noswapfile
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Navigation
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+"Move between windows with Alt + h,j,k,l
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Vundle config
@@ -89,7 +98,16 @@ set t_Co=256
 " tmuxline config
 """"""""""""""""""""""""""""""""""""""""""""""""""" 
         
-let g:tmuxline_preset = 'tmux'
+let g:tmuxline_preset = {
+        \ 'a': '#(whoami)',
+        \ 'b': ['s: #S', 'x#{session_windows}'],
+        \ 'c': ['p: #P', '#{pane_width}x#{pane_height}'],
+        \ 'win': ['w: #I #W', 'x#{window_panes}'],
+        \ 'cwin':['w: #I#F #W', 'x#{window_panes}'],
+        \ 'x': ['#(mocp -i)'],
+        \ 'z': ['#(dropbox status)'],
+        \ 'options': {
+        \    'status-justify': 'left'}}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " promptline config
