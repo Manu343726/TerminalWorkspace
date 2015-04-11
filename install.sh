@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing dependencies..."
-sudo yaourt -S --noconfirm --needed gvim tmux oh-my-zsh-git fbterm acpi vundle-git
+yaourt -S --noconfirm --needed gvim tmux oh-my-zsh-git fbterm acpi vundle-git
 
 echo "Setting up zsh..."
 chsh -s /bin/zsh
