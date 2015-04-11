@@ -69,7 +69,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/.gem/ruby/2.1.0/bin:$PATH #Ruby 
+export PATH=$HOME/.gem/ruby/2.1.0/bin:$PATH # Ruby 
+export PATH=$HOME/.gem/ruby/2.2.0/bin:$PATH # Ruby
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -147,5 +148,8 @@ alias mocpinfo='mocp --format "%song (%artist - %album)"'
 #Open sublime
 sublm()
 {
-    subl $@ &>/dev/null &
+    subl -a $@ 1>/dev/null 2>/dev/null &
 }
+
+#biicode alternatives
+alias sbii='$HOME/sbii'

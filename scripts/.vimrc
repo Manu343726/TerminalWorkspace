@@ -38,7 +38,9 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
-"Bundle 'https://github.com/Valloric/YouCompleteMe.git'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Shougo/neomru.vim'
+Bundle 'Shougo/unite.vim'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'edkolev/tmuxline.vim'
