@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 #Execute tmux on startup
 
 if [ "$TERM" = "linux" ]; then
